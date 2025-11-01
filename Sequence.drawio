@@ -1,0 +1,122 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0" version="28.2.8">
+  <diagram name="Page-1" id="hqQg7grNkKlANB4qHBQE">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Ve09-_WZHB98UUB1jmqY-1" value=":Student" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="130" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ve09-_WZHB98UUB1jmqY-2" value=":CourseDashboard" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="200" y="70" width="120" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="Ve09-_WZHB98UUB1jmqY-3" value="clickEnroll(courseID)" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;exitX=0.75;exitY=0.1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="Ve09-_WZHB98UUB1jmqY-1" target="Ve09-_WZHB98UUB1jmqY-2">
+          <mxGeometry x="0.0027" width="80" relative="1" as="geometry">
+            <mxPoint x="110" y="130" as="sourcePoint" />
+            <mxPoint x="264.5" y="130" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ve09-_WZHB98UUB1jmqY-4" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="674.5" y="220" as="sourcePoint" />
+            <mxPoint x="475" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ve09-_WZHB98UUB1jmqY-12" value="studentObject" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="Ve09-_WZHB98UUB1jmqY-4">
+          <mxGeometry x="0.0213" relative="1" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ve09-_WZHB98UUB1jmqY-7" value=":JsonDatabaseManager" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="590" y="70" width="170" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="Ve09-_WZHB98UUB1jmqY-8" value=":CourseService" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="420" y="70" width="100" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="Ve09-_WZHB98UUB1jmqY-10" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="Ve09-_WZHB98UUB1jmqY-8">
+          <mxGeometry x="45" y="100" width="10" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="Ve09-_WZHB98UUB1jmqY-9" value="enrollStudent(studentID, courseID)" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" source="Ve09-_WZHB98UUB1jmqY-2" target="Ve09-_WZHB98UUB1jmqY-8">
+          <mxGeometry x="0.0504" width="80" relative="1" as="geometry">
+            <mxPoint x="259.92857142857144" y="170" as="sourcePoint" />
+            <mxPoint x="469.5" y="170" as="targetPoint" />
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="380" y="170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ve09-_WZHB98UUB1jmqY-11" value="getStudent(studentID)" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" source="Ve09-_WZHB98UUB1jmqY-10" target="Ve09-_WZHB98UUB1jmqY-7">
+          <mxGeometry x="0.0483" width="80" relative="1" as="geometry">
+            <mxPoint x="475" y="190" as="sourcePoint" />
+            <mxPoint x="674.5" y="190" as="targetPoint" />
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="550" y="190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ve09-_WZHB98UUB1jmqY-13" value="getCourse(courseID)" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" source="Ve09-_WZHB98UUB1jmqY-10" target="Ve09-_WZHB98UUB1jmqY-7">
+          <mxGeometry x="0.0483" width="80" relative="1" as="geometry">
+            <mxPoint x="480" y="250" as="sourcePoint" />
+            <mxPoint x="680" y="250" as="targetPoint" />
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="555" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ve09-_WZHB98UUB1jmqY-14" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="674.5" y="280" as="sourcePoint" />
+            <mxPoint x="475" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ve09-_WZHB98UUB1jmqY-15" value="courseObject" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="Ve09-_WZHB98UUB1jmqY-14">
+          <mxGeometry x="0.0213" relative="1" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ve09-_WZHB98UUB1jmqY-16" value="saveStudentData(studentObject)" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="475" y="310" as="sourcePoint" />
+            <mxPoint x="674.5" y="310" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="650" y="310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ve09-_WZHB98UUB1jmqY-17" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="674.5" y="340" as="sourcePoint" />
+            <mxPoint x="475" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ve09-_WZHB98UUB1jmqY-18" value="success" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="Ve09-_WZHB98UUB1jmqY-17">
+          <mxGeometry x="0.0213" relative="1" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ve09-_WZHB98UUB1jmqY-22" value="enrollmentConfirmation()" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="0.0002" relative="1" as="geometry">
+            <mxPoint x="469.5" y="360" as="sourcePoint" />
+            <mxPoint x="260.0238095238095" y="360" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ve09-_WZHB98UUB1jmqY-23" value="display(&quot;Enrollment Successful&quot;)" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=1;entryY=0.3333333333333333;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="Ve09-_WZHB98UUB1jmqY-1">
+          <mxGeometry x="0.027" relative="1" as="geometry">
+            <mxPoint x="260" y="380" as="sourcePoint" />
+            <mxPoint x="180" y="380" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="170" y="380" />
+              <mxPoint x="170" y="150" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
